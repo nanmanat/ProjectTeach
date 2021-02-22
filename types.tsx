@@ -4,8 +4,9 @@ export type RootStackParamList = {
 };
 
 export type BottomTabParamList = {
-  TabOne: undefined;
-  TabTwo: undefined;
+  Home: undefined;
+  Classes: undefined;
+  Profile: undefined;
 };
 
 export type TabOneParamList = {
@@ -14,4 +15,26 @@ export type TabOneParamList = {
 
 export type TabTwoParamList = {
   TabTwoScreen: undefined;
+};
+
+export type TabThreeParamList = {
+  TabThreeScreen: undefined;
+};
+
+export type User = {
+  id: string;
+  name: string;
+  imageUri: string;
+};
+
+export type Massage = {
+  id: string;
+  content: string;
+  createdAt: string;
+};
+
+export type ClassRoom = {
+  id: string;
+  users: [User];
+  lastMassage: Massage;
 };

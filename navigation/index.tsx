@@ -2,6 +2,9 @@ import { NavigationContainer, DefaultTheme, DarkTheme } from '@react-navigation/
 import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
 import { ColorSchemeName } from 'react-native';
+import { View } from '../components/Themed';
+import Colors from '../constants/Colors';
+import { AntDesign, MaterialCommunityIcons } from '@expo/vector-icons';
 
 import NotFoundScreen from '../screens/NotFoundScreen';
 import { RootStackParamList } from '../types';
@@ -26,8 +29,27 @@ const Stack = createStackNavigator<RootStackParamList>();
 
 function RootNavigator() {
   return (
-    <Stack.Navigator screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="Root" component={BottomTabNavigator} />
+    <Stack.Navigator screenOptions={{ 
+        headerStyle: {
+          backgroundColor: 'white',
+        },
+        headerTitleAlign: 'center',
+        headerTitleStyle: {
+          fontWeight: 'bold', fontSize: 22,
+        }
+    }}>
+      <Stack.Screen name="Root" 
+      component={BottomTabNavigator}
+      options= {{
+        title: "ProjectTeach",
+        headerRight: () => (
+          <View style={{flexDirection: 'row', width: 60, justifyContent: 'space-between', marginRight: 10,}}>
+            <AntDesign name="search1" size={22} color="black" />
+            <MaterialCommunityIcons name="dots-vertical" size={22} color="black" />
+          </View>
+        )
+      }}
+      />
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
     </Stack.Navigator>
   );

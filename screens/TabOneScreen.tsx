@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
+import ClassListitem from '../components/ClassListitem';
 
 export default function TabOneScreen() {
   return (

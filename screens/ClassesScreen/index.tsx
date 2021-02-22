@@ -1,13 +1,14 @@
 import * as React from 'react';
-import { StyleSheet } from 'react-native';
-import ClassListitem from '../components/ClassListitem';
+import { StyleSheet, View } from 'react-native';
 
-import { View } from '../components/Themed';
+import ClassListitem from '../../components/ClassListitem';
+
+
 
 export default function ClassesScreen() {
   return (
     <View style={styles.container}>
-      <ClassListitem ClassRoom={{LastMassage: {content: "Hello There"}}} />
+      <ClassListitem ClassRoom={{lastMassage: {content: "Hello There"}}}/>
     </View>
   );
 }
