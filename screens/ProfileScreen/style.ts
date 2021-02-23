@@ -1,3 +1,4 @@
+import { Zocial } from '@expo/vector-icons';
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -37,7 +38,11 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     center: {
-        marginTop: 'auto',
+        marginTop: "auto",
+        marginBottom: 10,
+        alignItems: 'center',
+        width: '100%',
+        fontSize: 20
     } 
 });
 

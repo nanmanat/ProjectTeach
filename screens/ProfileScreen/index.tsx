@@ -25,10 +25,10 @@ const ProfileScreen = () => {
                         <Text style={styles.email}>{user.email}</Text>
                     </View>
                 </View>
-                <Pressable onPress={signOut} style= {styles.center}>
-                    <Text>Sign Out</Text>
-                </Pressable>
             </View>
+            <Pressable onPress={signOut} style= {styles.center}>
+                <Text>Sign Out</Text>
+            </Pressable>
         </View>
     )
 }
