@@ -12,7 +12,7 @@ const ProfileScreen = () => {
     })
 
     const signOut = () => {
-        console.warn("Sign out")
+        console.warn("Log out")
     } 
 
     return (
@@ -27,7 +27,7 @@ const ProfileScreen = () => {
                 </View>
             </View>
             <Pressable onPress={signOut} style= {styles.center}>
-                <Text>Sign Out</Text>
+                <Text style={{ fontSize:16, color: 'red', fontWeight: 'bold'}}>Log Out</Text>
             </Pressable>
         </View>
     )

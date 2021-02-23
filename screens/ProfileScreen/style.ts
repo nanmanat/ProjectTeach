@@ -39,10 +39,9 @@ const styles = StyleSheet.create({
     },
     center: {
         marginTop: "auto",
-        marginBottom: 10,
+        marginBottom: 7,
         alignItems: 'center',
         width: '100%',
-        fontSize: 20
     } 
 });
 
