@@ -1,0 +1,28 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-projectteach-dev-112340-authRole",
+      "UnauthRoleArn": "arn:aws:iam::536707423694:role/amplify-projectteach-dev-112340-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::536707423694:role/amplify-projectteach-dev-112340-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-projectteach-dev-112340-deployment",
+      "UnauthRoleName": "amplify-projectteach-dev-112340-unauthRole",
+      "StackName": "amplify-projectteach-dev-112340",
+      "StackId": "arn:aws:cloudformation:us-east-2:536707423694:stack/amplify-projectteach-dev-112340/15fd8d30-7658-11eb-a25d-0aef37b22a6e",
+      "AmplifyAppId": "dqbntilsahmh6"
+    },
+    "categories": {
+      "auth": {
+        "projectteach867f2877867f2877": {
+          "googleClientId": "181260095187-0onmlm6704psi3mvn9pouhv8kdssjf65.apps.googleusercontent.com"
+        }
+      },
+      "function": {
+        "projectteach867f2877867f2877PostConfirmation": {
+          "deploymentBucketName": "amplify-projectteach-dev-112340-deployment",
+          "s3Key": "amplify-builds/projectteach867f2877867f2877PostConfirmation-6d4a703864554d4b5730-build.zip"
+        }
+      }
+    }
+  }
+}

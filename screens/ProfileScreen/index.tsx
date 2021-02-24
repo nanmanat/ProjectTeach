@@ -1,3 +1,5 @@
+import { CommonActions, useNavigation } from '@react-navigation/core';
+import { Auth } from 'aws-amplify';
 import React, { useState } from 'react';
 import {View, Text, Image, Pressable} from 'react-native';
 import styles from './style';
@@ -11,10 +13,20 @@ const ProfileScreen = () => {
         image: 'https://cdn.discordapp.com/attachments/556849985564573696/813762335289901056/Profile.jpg',
     })
 
-    const signOut = () => {
-        console.warn("Log out")
-    } 
+    const navigation = useNavigation();
 
+    const signOut = async () => {
+        await Auth.signOut();
+        navigation.dispatch(
+            CommonActions.reset({
+                index: 0,
+                routes: [
+                    {name: 'Signin'}
+                ],
+            })
+        );
+    } 
+ 
     return (
         <View style={styles.root}>
             <View style={styles.userContianer}>
